@@ -25,26 +25,8 @@
 ![image](https://github.com/user-attachments/assets/3456e208-b541-41a9-82b5-06875b1b0c24)
 
 
----
 
-#### Шаг 4: Настройка веб-сервера
-Теперь нужно настроить веб-сервер (например, Apache или Nginx) для работы с Yii2.
-
-##### Для Apache (Только на экзамене):
-1. Создайте файл `.htaccess` в корневой папке вашего проекта (`cleaning_portal`) с содержимым:
-   ```apache
-   RewriteEngine on
-   RewriteCond %{REQUEST_FILENAME} !-f
-   RewriteCond %{REQUEST_FILENAME} !-d
-   RewriteRule . index.php
-   ```
-
-![image](https://github.com/user-attachments/assets/2cb27b0d-0c45-46b9-bf5f-d149001f95eb)
-
-
----
-
-#### Шаг 5: Настройка базы данных
+#### Шаг 4: Настройка базы данных
 1. Откройте файл `config/db.php` в вашем проекте.
 2. Измените настройки подключения к базе данных:
    ```php
@@ -66,7 +48,7 @@
 
 ---
 
-#### Шаг 6: Настройка Cookie Validation
+#### Шаг 5: Настройка Cookie Validation
 1. Откройте файл `config/web.php` в вашем проекте.
 2. Заполните строку `cookieValidationKey` любыми символами:
    ```php
@@ -91,7 +73,7 @@
 
 ---
 
-#### Шаг 7: Проверка установки
+#### Шаг 6: Проверка установки
 1. Откройте браузер и перейдите по адресу вашего проекта, например, `http://cleaning-portal/web/` **ИЛИ** По домену выданном вам на экзамене в формате xxxxxx-m1.ru
 2. Если установка прошла успешно, вы увидите стартовую страницу Yii2.
 
